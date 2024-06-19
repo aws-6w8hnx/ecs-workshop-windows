@@ -431,7 +431,7 @@
     PrivateInstanceSecurityGroup:
       Type: AWS::EC2::SecurityGroup
       Properties:
-        GroupDescription: ecs task sg
+        GroupDescription: 'ECS Task Security Group'
         VpcId: !Ref ContMSVPC
         SecurityGroupIngress:
           - IpProtocol: tcp
