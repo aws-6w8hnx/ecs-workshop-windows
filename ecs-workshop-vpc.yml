@@ -465,7 +465,7 @@
       Export:
         Name: !Sub "${AWS::Region}-${AWS::StackName}-ConMSSubnet4"
 
-    PrivateInstanceSecurityGroup:
+    DefaultSecurityGroup:
       Description: "DefaultSecurityGroup Id"
       Value: !GetAtt ContMSVPC.DefaultSecurityGroup
       Export:
